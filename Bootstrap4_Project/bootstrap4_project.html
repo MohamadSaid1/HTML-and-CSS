@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap Project</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    section {
+      padding-top: 80px;
+      padding-bottom: 80px;
+    }
+    .badge {
+      margin: 2px;
+    }
+    .navbar-brand span {
+      color: #0dcaf0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Bootstrap <span>Project</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#showtimes">Showtimes</a></li>
+          <li class="nav-item"><a class="nav-link" href="#deals">Deals</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Jumbotron -->
+  <header class="bg-info text-white text-center py-5 mt-5">
+    <div class="container">
+      <h1 class="display-4">Welcome to My Movies Project!</h1>
+      <p class="lead"> Powered by Bootstrap.</p>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="bg-light">
+    <div class="container text-center">
+      <h2>About</h2>
+      <p>This sections talks about the project</p>
+    </div>
+  </section>
+
+  <!-- Showtimes Section -->
+  <section id="showtimes">
+    <div class="container">
+      <h2 class="text-center mb-5">Now Showing</h2>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+
+        <!-- Movie 1 -->
+        <div class="col">
+          <div class="card h-100">
+            <img src="https://m.media-amazon.com/images/M/MV5BMTcwMjcxYTQtYjJlOS00YTE1LWIyZGYtOGRlOTBlMWZmYTliXkEyXkFqcGc@._V1_.jpg" class="card-img-top" alt="Kong: Skull Island">
+            <div class="card-body">
+              <h5 class="card-title">Kong: Skull Island</h5>
+              <p class="card-text">A team of scientists and soldiers explores an uncharted island in the Pacific, venturing into the domain of the mighty Kong.</p>
+              <span class="badge rounded-pill bg-info">12:00 p.m.</span>
+              <span class="badge rounded-pill bg-info">1:30 p.m.</span>
+              <span class="badge rounded-pill bg-info">3:00 p.m.</span>
+              <span class="badge rounded-pill bg-info">5:30 p.m.</span>
+              <span class="badge rounded-pill bg-info">7:00 p.m.</span>
+              <span class="badge rounded-pill bg-info">9:30 p.m.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Movie 2 -->
+        <div class="col">
+          <div class="card h-100">
+            <img src="https://m.media-amazon.com/images/M/MV5BNzBkNjdjZTctNjdhOS00NmIyLTlkNjQtY2EwNGMwYmZjNTIxXkEyXkFqcGc@._V1_.jpg" class="card-img-top" alt="Ghost in the Shell">
+            <div class="card-body">
+              <h5 class="card-title">Ghost in the Shell</h5>
+              <p class="card-text">In a future world, Major is a human saved from a crash, cyber-enhanced to be a perfect soldier, devoted to stopping the world’s most dangerous criminals.</p>
+              <span class="badge rounded-pill bg-info">12:00 p.m.</span>
+              <span class="badge rounded-pill bg-info">1:30 p.m.</span>
+              <span class="badge rounded-pill bg-info">3:00 p.m.</span>
+              <span class="badge rounded-pill bg-info">5:30 p.m.</span>
+              <span class="badge rounded-pill bg-info">7:00 p.m.</span>
+              <span class="badge rounded-pill bg-info">9:30 p.m.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Movie 3 -->
+        <div class="col">
+          <div class="card h-100">
+            <img src="https://lumiere-a.akamaihd.net/v1/images/p_beautyandthebeast_19752_32e65c36.jpeg" class="card-img-top" alt="Beauty and the Beast">
+            <div class="card-body">
+              <h5 class="card-title">Beauty and the Beast</h5>
+              <p class="card-text">A young woman discovers the kind heart and soul of a cursed prince, trapped in the body of a beast, in this live-action adaptation of a classic tale.</p>
+              <span class="badge rounded-pill bg-info">12:00 p.m.</span>
+              <span class="badge rounded-pill bg-info">1:30 p.m.</span>
+              <span class="badge rounded-pill bg-info">3:00 p.m.</span>
+              <span class="badge rounded-pill bg-info">5:30 p.m.</span>
+              <span class="badge rounded-pill bg-info">7:00 p.m.</span>
+              <span class="badge rounded-pill bg-info">9:30 p.m.</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Deals Section -->
+  <section id="deals" class="bg-light">
+    <div class="container text-center">
+      <h2>Special Deals</h2>
+      <p>This sections should has some deals</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p class="mb-0">&copy; 2025 Bootstrap Project. All rights reserved.</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+ 
